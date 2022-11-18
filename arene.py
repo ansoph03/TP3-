@@ -61,7 +61,9 @@ class Arene:
         Args:
             lancer (Lancer): contient les informations sur le lancer à effectuer
         """
-        # VOTRE CODE ICI
+        for emplacement in lancer:
+            de_relancer = emplacement.relancer_des_accroches
+            lancer.insert(emplacement, de_relancer)
 
     def relancer_des_accroches(self, trajectoire):
         """
@@ -71,7 +73,9 @@ class Arene:
         Args:
             trajectoire (list): Liste des coordonnées où l'on doit relancer
         """
-        # VOTRE CODE ICI
+        for emplacement in trajectoire:
+            self.des[emplacement].lancer()
+
 
     def placer_nouveau_de(self, de, emplacement_final):
         """
@@ -86,7 +90,9 @@ class Arene:
             de (De): Le dé à ajouter
             emplacement_final ((int, int)): Les coordonnées où ajouter le dé
         """
-        # VOTRE CODE ICI
+        if emplacement_final.dans_arene :
+            de_a_ajouter = de.lancer
+            de[emplacement_final] = de_a_ajouter
 
     def effectuer_plusieurs_lancers(self, liste_lancers):
         """
