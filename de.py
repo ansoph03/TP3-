@@ -35,6 +35,9 @@ class De:
         if self.valeur == 1:
             return "X"
 
+        if mode == 1:
+            representation_de
+
     def lancer(self):
         """
         Modifie aléatoirement la valeur du dé.
