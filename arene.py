@@ -7,6 +7,7 @@ Représente la zone où les dés sont lancés
 import colorama
 from de import De
 
+#allo
 
 class Arene:
     """ Représente la zone de jeu où les dés sont lancés.
