@@ -46,7 +46,10 @@ class Arene:
         Returns:
             bool: True si l'emplacement est dans l'arène, False sinon
         """
-        # VOTRE CODE ICI
+        inclus = False
+        if emplacement > (0,0) and emplacement < (self.dimension - 1,self.dimension - 1):
+            inclus = True
+        return inclus
 
     def effectuer_lancer(self, lancer):
         """
