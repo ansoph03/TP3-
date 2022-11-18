@@ -32,7 +32,8 @@ class De:
         Returns:
             str: La représentation de la valeur du dé.
         """
-        # VOTRE CODE ICI
+        if self.valeur == 1:
+            return "X"
 
     def lancer(self):
         """
