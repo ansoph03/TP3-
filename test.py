@@ -1,4 +1,2 @@
 def test():
-    return 1
-
-print(3)
+    return 2
