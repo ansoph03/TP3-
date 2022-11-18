@@ -36,7 +36,12 @@ class De:
             return "X"
 
         if mode == 1:
-            representation_de
+            representation_de = ["2", "3", "4", "5", "6"]
+            return representation_de[self.valeur - 2]
+
+        if mode == 2:
+            representation_de = ["⚁", "⚂", "⚃", "⚄", "⚅"]
+            return representation_de[self.valeur - 2]
 
     def lancer(self):
         """
