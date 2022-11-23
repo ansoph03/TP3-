@@ -101,7 +101,8 @@ class Arene:
         Args:
             liste_lancers (list): La liste de lancers à effectuer
         """
-        # VOTRE CODE ICI
+        for lancer in liste_lancers:
+            lancer.effectuer_lancer
 
     def rangement(self, joueur_en_cours):
         """
