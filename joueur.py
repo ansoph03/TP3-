@@ -272,7 +272,10 @@ class Joueur:
         Returns:
             bool: True si le joueur est éliminé, False sinon.
         """
-        # VOTRE CODE ICI
+        if self.des == 0:
+            return True
+        else:
+            return False
 
     def rendre_de(self, de):
         """
@@ -282,7 +285,8 @@ class Joueur:
         Args:
             de (De): Le dé à ajouter
         """
-        # VOTRE CODE ICI
+        de.ranger()
+        self.des.append(de)
 
     def table_rase(self):
         """
