@@ -139,8 +139,8 @@ class Joueur:
             return None
 
         else:
-            self.entree.split(',')
-            coordonnees = tuple(self.entree)
+            entree.split(',')
+            coordonnees = tuple(entree)
             return coordonnees
 
 
@@ -160,7 +160,10 @@ class Joueur:
         Returns:
             str: Le point cardinal, en majuscule (None si invalide)
         """
-        # VOTRE CODE ICI
+        if entree in ANGLES.keys:
+            return entree.upper
+        else:
+            return None
 
     def traitement_puissance(self, entree):
         """
@@ -176,7 +179,13 @@ class Joueur:
         Returns:
             int: L'entier représenté par l'entrée (None si invalide)
         """
-        # VOTRE CODE ICI
+        if 1 <= entree <= self.arene.dimension:
+            return int(entree)
+        elif not entree.isnumeric:
+            return None
+        else:
+            return None
+
 
     def choisir_continuer(self):
         """
