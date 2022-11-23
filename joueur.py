@@ -100,7 +100,14 @@ class Joueur:
         Returns:
             bool: True si l'entrée est L, False si T (None si invalide)
         """
-        # VOTRE CODE ICI
+        if self.entree == "L" or self.entree == "l":
+            return True
+
+        elif self.entree == "T" or self.entree == "t":
+            return False
+
+        else:
+            return None
 
     def traitement_coordonnees(self, entree):
         """
