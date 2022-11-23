@@ -7,7 +7,6 @@ Représente la zone où les dés sont lancés
 import colorama
 from de import De
 
-#allo
 
 class Arene:
     """ Représente la zone de jeu où les dés sont lancés.
@@ -102,7 +101,8 @@ class Arene:
         Args:
             liste_lancers (list): La liste de lancers à effectuer
         """
-        # VOTRE CODE ICI
+        for lancer in liste_lancers:
+            lancer.effectuer_lancer
 
     def rangement(self, joueur_en_cours):
         """
