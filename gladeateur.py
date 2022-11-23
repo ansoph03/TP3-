@@ -175,7 +175,7 @@ class Gladeateur:
         """
         self.joueur_index += 1
         for joueur in self.liste_joueurs:
-            if self.joueur_index % len(self.liste_joueurs) == 0 and self.joueur_index != 0:
+            if self.joueur_index % len(self.liste_joueurs) == 0:
                 self.joueur_index = 0
 
             elif joueur.est_elimine():

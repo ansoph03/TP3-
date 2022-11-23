@@ -129,9 +129,19 @@ class Joueur:
         Returns:
             tuple: Coordonnées traitées (None si invalide)
         """
-        if
-        self.entree.split(',')
-        coordonnees = tuple(self.entree)
+        nombre_virgule = 0
+
+        for caractere in entree:
+            if caractere == ",":
+                nombre_virgule += 1
+
+        if nombre_virgule > 1 or not entree.isnumeric() or not entree.dans_arene:
+            return None
+
+        else:
+            self.entree.split(',')
+            coordonnees = tuple(self.entree)
+            return coordonnees
 
 
     def traitement_angle(self, entree):
