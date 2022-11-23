@@ -297,7 +297,7 @@ class Joueur:
         Returns:
             liste: La liste des lancers
         """
-        # VOTRE CODE ICI
+        
 
     def __str__(self):
         """
