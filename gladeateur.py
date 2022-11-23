@@ -173,7 +173,13 @@ class Gladeateur:
          - L'index doit augmenter de plus que 1 lorsqu'il y a des joueurs éliminés
          à sauter (Joueur.est_elimine)
         """
-        # VOTRE CODE I
+        self.joueur_index += 1
+        for joueur in self.liste_joueurs:
+            if self.liste_joueurs[self.joueur_index] + 1 > len(self.liste_joueurs) - 1:
+                self.joueur_index = 0
+
+            elif joueur.est_elimine():
+                self.joueur_index += 1
 
     def calculer_victoire(self):
         """
