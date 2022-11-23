@@ -161,7 +161,9 @@ class Gladeateur:
         Returns:
             Joueur: Le joueur dont c'est le tour.
         """
-        # VOTRE CODE ICI
+        liste_des_joueurs = self.liste_joueurs
+        Joueur = self.liste_joueurs[self.joueur_index]
+        return Joueur
 
     def changer_joueur(self):
         """
@@ -171,7 +173,7 @@ class Gladeateur:
          - L'index doit augmenter de plus que 1 lorsqu'il y a des joueurs éliminés
          à sauter (Joueur.est_elimine)
         """
-        # VOTRE CODE ICI
+        # VOTRE CODE I
 
     def calculer_victoire(self):
         """
