@@ -203,7 +203,7 @@ class Gladeateur:
         if nombre_joueurs_non_elimines == 1:
             vainqueur = joueur_non_elimine[0]
             return vainqueur
-        
+
         else:
             return None
 

@@ -44,7 +44,9 @@ class Joueur:
         Returns:
             Lancer: Le lancer créé
         """
-        # VOTRE CODE ICI
+        lancer = (self.coordonnes, self.angle, self.puissance)
+        self.des -= 1
+        return lancer
 
     def choisir_lancer(self):
         """
