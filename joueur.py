@@ -129,7 +129,10 @@ class Joueur:
         Returns:
             tuple: Coordonnées traitées (None si invalide)
         """
-        # VOTRE CODE ICI
+        if
+        self.entree.split(',')
+        coordonnees = tuple(self.entree)
+
 
     def traitement_angle(self, entree):
         """
