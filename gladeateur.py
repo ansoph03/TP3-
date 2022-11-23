@@ -190,4 +190,24 @@ class Gladeateur:
         Returns:
             Joueur: Le joueur vainqueur (ou None en l'absence de victoire)
         """
-        # VOTRE CODE ICI
+        nombre_joueurs_non_elimines = 0
+        joueur_non_elimine = []
+
+        for joueur in self.liste_joueurs:
+            if joueur.est_elimine():
+                self.joueur_index += 1
+            else:
+                nombre_joueurs_non_elimines += 1
+                joueur_non_elimine.append(joueur)
+
+        if nombre_joueurs_non_elimines == 1:
+            vainqueur = joueur_non_elimine[0]
+            return vainqueur
+        
+        else:
+            return None
+
+
+
+
+
