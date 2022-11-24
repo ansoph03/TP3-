@@ -297,7 +297,14 @@ class Joueur:
         Returns:
             liste: La liste des lancers
         """
-        
+        liste_lancer = []
+        while self.des != 0:
+            liste_lancer.append(self.numero_joueur.creer_lancer
+                                (self.numero_joueur.piger_coordonnees(),self.numero_joueur.piger_angle(),
+                                 self.numero_joueur.piger_puissance()))
+            self.des -= 1
+
+        return liste_lancer
 
     def __str__(self):
         """
